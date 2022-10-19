@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title data-tid="elements_examples.meta.title">Stripe Payment Element example</title>
+  <meta data-tid="elements_examples.meta.description" name="description" content="Build beautiful, smart checkout flows.">
+
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon/180x180.png">
+  <link rel="icon" href="img/apple-touch-icon/180x180.png">
+
+  <script src="https://js.stripe.com/v3/"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="css/stripe-elements.css" data-rel-css="" />
+
+</head>
+<body>
+  <div class="globalContent">
+    <main>
+    <section class="container-lg">
+
+      <div class="bodycell">
+        <h3 class="common-SubTitle">Stripe - Card Element demonstration</h3>
+        <p data-tid="elements_examples.intro.subtitle" class="common-BodyText">This example demonstrates the use of the <a href="https://stripe.com/docs/payments/accept-a-payment?platform=web&ui=elements">Stripe Payment Element</a>.</p>
+        <h4 class="common-SubTitle">Setup</h4>
+        <p data-tid="elements_examples.intro.subtitle" class="common-BodyText">Configure your publishable API Key and Stripe Account Id in <strong>js/stripe-card-element-example.js</strong>.</p>
+      </div><br><br>
+
+      <div class="cell example example2" id="example-2">
+       
+       <form id="payment-form">
+        <div id="payment-element">
+          <!-- Elements will create form elements here -->
+        </div>
+        <button id="submit">Submit</button>
+        <div id="error-message">
+          <!-- Display error message to your customers here -->
+        </div>
+      </form>
+
+
+      <div id="messages" role="alert" style="display: none;"></div>
+
+      <div class="caption">
+        <p>For test cards visit <a href="https://stripe.com/docs/testing">Stripe Testing</a></p>
+      </div>
+
+      </div>
+
+      <div class="bodycell">
+        <br>
+        <p data-tid="elements_examples.intro.subtitle" class="common-BodyText"></p>
+      </div>
+
+    </section>
+    </main>
+  </div>
+
+  <!-- Simple localization script. -->
+  <script src="js/l10n.js" data-rel-js></script>
+
+  <!-- Scripts for sample card details form. -->
+  <script src="js/stripe-payment-element-example.js" data-rel-js></script>
+
+</body>
+</html>
